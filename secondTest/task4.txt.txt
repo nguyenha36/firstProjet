@@ -1,0 +1,10 @@
+Nhiệm vụ 4: Đặt lại giá trị từng kênh màu của từng pixel bằng giá trị trung bình của 3 kênh màu của pixel đó
+
+image = new SimpleImage("flowers.jpg");
+for (pixel:image) {
+	avg = (pixel.getRed()+pixel.getBlue()+pixel.getGreen())/3;
+	pixel.setRed(avg);
+	pixel.setGreen(avg);
+	pixel.setBlue(avg);
+}
+print(image);
